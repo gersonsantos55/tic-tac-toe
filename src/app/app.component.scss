@@ -1,0 +1,39 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #2e2e2e;
+
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    background-color: aliceblue;
+
+    span {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      height: 100px;
+      width: 100px;
+      border: 1px solid #bdbdbd;
+      box-sizing: border-box;
+    }
+
+    span.winner {
+      background-color: greenyellow;
+    }
+  }
+
+  .board.can-be-played {
+    span:hover {
+      background-color: #dbdbdb;
+      cursor: pointer;
+    }
+  }
+}
