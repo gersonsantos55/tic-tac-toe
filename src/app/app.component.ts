@@ -110,6 +110,7 @@ export class AppComponent {
 
   public reset(): void {
     this.spaces = DEFAULT_SPACES;
+    this.nextSymbol = 'X';
     delete this.winner;
   }
 
